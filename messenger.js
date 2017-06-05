@@ -24,9 +24,9 @@ interval = setInterval (() => {
   })
 
   let endpointOptions = {
-    host: 'localhost',
-    path: '/',
     protocol: 'https:',
+    host: 'hooks.slack.com',
+    path: '/services/xxxxxxxxx/xxxxxxxxx/xxxxxxxxxxxxxxxxxxxxxxxx',
     port: '443',
     method: 'POST',
     headers: {
