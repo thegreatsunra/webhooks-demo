@@ -1,6 +1,6 @@
 # webhooks-demo
 
-> Do a thing
+> Webhooks demo
 
 ## Prerequisites
 
@@ -23,19 +23,15 @@ cd webhooks-demo
 yarn
 ```
 
-3) start the messaging server in one window
+## Make it work
 
-```bash
-node ./index.js
-```
-
-3) start the endpoint server in one window
+1) start the endpoint server in one window
 
 ```bash
 node ./endpoint.js
 ```
 
-4) start the messenging server in another window
+2) start the messenging server in another window
 
 ```bash
 node ./messenger.js
