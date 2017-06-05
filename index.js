@@ -1,6 +1,6 @@
 const express = require('express')
+const http = require('http')
 const app = express()
-
 app.use(express.static('public'))
 
 app.listen(3000, () => {
@@ -35,4 +35,13 @@ interval = setInterval (() => {
     }
   }
 
+  let req = http.request(endpointOptions, (res) => {
+    res.setEncoding('utf8')
+    res.on('data', (chunk) => {
+      console.log("body: " + chunk)
+    })
+  })
+  req.write(message)
+  req.end()
+  console.log('message sent!')
 }, 1000)
