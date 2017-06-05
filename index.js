@@ -23,4 +23,16 @@ interval = setInterval (() => {
       keyTwo: 'value'
     }
   })
+
+  let endpointOptions = {
+    host: 'localhost',
+    port: 3001,
+    path: '/',
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/x-www-form-urlencoded',
+      'Content-Length': Buffer.byteLength(message)
+    }
+  }
+
 }, 1000)
