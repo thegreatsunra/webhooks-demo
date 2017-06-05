@@ -43,4 +43,4 @@ interval = setInterval (() => {
   req.write(message)
   req.end()
   console.log('message sent!')
-}, 1000)
+}, 2000)
