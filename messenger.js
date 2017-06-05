@@ -18,10 +18,9 @@ interval = setInterval (() => {
   let message = JSON.stringify({
     timestampUTC: timestamp,
     messageCount: count,
-    payload: {
-      keyOne: true,
-      keyTwo: 'value'
-    }
+    text: "Hello! I am an amazing message!",
+    keyOne: true,
+    keyTwo: 'value'
   })
 
   let endpointOptions = {
