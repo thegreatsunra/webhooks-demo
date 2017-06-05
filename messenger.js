@@ -1,5 +1,5 @@
 const express = require('express')
-const http = require('http')
+const https = require('https')
 const app = express()
 app.use(express.static('public'))
 
@@ -24,10 +24,10 @@ interval = setInterval (() => {
   })
 
   let endpointOptions = {
-    protocol: 'http:',
     host: 'localhost',
     path: '/',
-    port: '3001',
+    protocol: 'https:',
+    port: '443',
     method: 'POST',
     headers: {
       'Content-Type': 'application/x-www-form-urlencoded',
@@ -35,7 +35,7 @@ interval = setInterval (() => {
     }
   }
 
-  let req = http.request(endpointOptions, (res) => {
+  let req = https.request(endpointOptions, (res) => {
     res.setEncoding('utf8')
     res.on('data', (chunk) => {
       console.log("body: " + chunk)
