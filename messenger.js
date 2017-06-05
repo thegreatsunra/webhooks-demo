@@ -24,9 +24,10 @@ interval = setInterval (() => {
   })
 
   let endpointOptions = {
+    protocol: 'http:',
     host: 'localhost',
-    port: 3001,
     path: '/',
+    port: '3001',
     method: 'POST',
     headers: {
       'Content-Type': 'application/x-www-form-urlencoded',
