@@ -1,6 +1,6 @@
 {
   "name": "webhooks-demo",
-  "description": "Serve a static site on Zeit's now using Express and basic-auth",
+  "description": "Webhooks demo",
   "version": "0.1.0",
   "homepage": "https://github.com/thegreatsunra/webhooks-demo",
   "repository": {
